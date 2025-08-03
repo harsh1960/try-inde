@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>स्वतंत्रता दिवस की शुभकामनाएं</title>
-    <!-- Google Fonts: Teko for headings, Poppins for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     
-    <!-- CSS Styles -->
     <style>
         :root {
             --saffron: #FF9933;
@@ -47,6 +44,7 @@
             color: var(--text-dark);
             text-align: center;
             line-height: 1.6;
+            padding-bottom: 70px; /* Space for the bottom ad banner */
         }
 
         /* --- Banner Section --- */
@@ -251,7 +249,7 @@
         }
 
         .hidden { display: none; }
-
+        
         /* --- Responsive Design --- */
         @media (max-width: 768px) {
             .banner { height: 50vh; }
@@ -275,19 +273,31 @@
             #shareableLink { font-size: 0.9rem; }
         }
 
+        /* --- Ad Banner Styles --- */
+        .ad-banner-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--bg-light);
+            padding: 5px 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* NEW STYLE for the second ad */
+        .ad-container-box {
+            margin: 30px auto 20px auto;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'ce259f1be2438c5357fa08ff37707fb5',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/ce259f1be2438c5357fa08ff37707fb5/invoke.js"></script>
+
     <header class="banner">
         <div class="banner-text">
             <h1>जय हिंद!</h1>
@@ -295,12 +305,10 @@
     </header>
 
     <main class="main-card">
-        <!-- 1. This section appears ONLY if the link was shared by someone -->
         <div id="greetingFromSenderSection" class="hidden">
             <p><i class="fas fa-envelope-open-text"></i> आपको <strong id="senderName"></strong> की ओर से एक खास शुभकामना मिली है!</p>
         </div>
 
-        <!-- 2. The main invitation section for all users -->
         <div id="mainInvitationSection">
             <h2>इस जश्न में शामिल हों!</h2>
             <p>अपना नाम लिखें और स्वतंत्रता दिवस की अपनी डिजिटल शुभकामनाएँ बनाकर पूरे देश के साथ साझा करें।</p>
@@ -308,7 +316,6 @@
         
         <hr class="divider" id="divider">
 
-        <!-- 3. The input form -->
         <div id="inputSection">
             <input type="text" id="nameInput" placeholder="अपना पूरा नाम यहाँ लिखें...">
             <button id="generateBtn">
@@ -316,7 +323,6 @@
             </button>
         </div>
 
-        <!-- 4. The final share section (hidden by default) -->
         <div id="finalShareSection" class="hidden">
             <h3>आपकी शुभकामनाएँ तैयार हैं!</h3>
             <p><strong><span id="fromName"></span></strong> की तरफ से, आपको और आपके परिवार को स्वतंत्रता दिवस की हार्दिक शुभकामनाएँ!</p>
@@ -331,7 +337,19 @@
         </div>
     </main>
 
-    <!-- JavaScript Logic -->
+    <div class="ad-container-box">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '8ed01d3ef33f9dd8d5e6fc76c4b2ae14',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/8ed01d3ef33f9dd8d5e6fc76c4b2ae14/invoke.js"></script>    
+    </div>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Get all necessary elements from the DOM
@@ -398,15 +416,19 @@
             handlePageLoad();
         });
     </script>
-<script type="text/javascript">
-	atOptions = {
-		'key' : 'ce259f1be2438c5357fa08ff37707fb5',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/ce259f1be2438c5357fa08ff37707fb5/invoke.js"></script>
+
+    <div class="ad-banner-container">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : 'ce259f1be2438c5357fa08ff37707fb5',
+                'format' : 'iframe',
+                'height' : 50,
+                'width' : 320,
+                'params' : {}
+            };
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/ce259f1be2438c5357fa08ff37707fb5/invoke.js"></script>
+    </div>
+
 </body>
 </html>
